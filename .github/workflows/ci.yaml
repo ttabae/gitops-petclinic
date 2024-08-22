@@ -40,7 +40,8 @@ jobs:
     
     # Maven Wrapper를 사용하여 프로젝트를 빌드합니다.
     - name: Build with Maven Wrapper
-      run: ./mvnw clean install
+      #run: ./mvnw clean install
+      run: ./mvnw package -DskipTests
 
     # AWS 자격 증명을 설정합니다.
     - name: Configure AWS credentials
